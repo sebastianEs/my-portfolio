@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #0f172a; /* mörkblå/svart bakgrund */
+  --color-light: #f8fafc; /* ljus text */
+  --color-gray: #94a3b8; /* sekundär text */
+  --color-accent: #22d3ee; /* cyan accent (professionell & techig) */
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-5xl: 3rem;
+}
+
+/* === Base styling === */
+body {
+  @apply bg-dark text-light font-body antialiased;
+}
+
+/* === Global heading + text === */
+h1, h2, h3, h4 {
+  @apply font-heading text-light;
+}
+
+/* === Links === */
+a {
+  @apply text-accent hover:underline hover:text-accent/80 transition;
+}
+
+/* === Buttons === */
+.button-primary {
+  @apply bg-accent text-dark px-6 py-3 rounded-md font-semibold hover:bg-accent/80 transition;
+}
+
+/* === Card styling (Work & Skills) === */
+.card {
+  @apply border border-gray-800 bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 transition-transform hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/10;
+}
+
+/* === Section styling === */
+.section {
+  @apply py-20 px-6 max-w-5xl mx-auto;
+}

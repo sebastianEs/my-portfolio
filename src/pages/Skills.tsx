@@ -1,9 +1,9 @@
 import { motion } from "framer-motion"
 import SectionTitle from "../components/SectionTitle"
 
-const frontend = ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux", "Vite"]
-const backend = [".NET (C#)", "Node.js", "SQL Server", "GraphQL", "Entity Framework", "MongoDB"]
-const devops = ["Azure DevOps", "Docker", "Kubernetes", "CI/CD Pipelines", "GitHub Actions"]
+const frontend = ["React", "TypeScript", "Next.js", "Tailwind CSS", "Redux", "Vite", "Svelte", "HTML5", "CSS3", "JavaScript"]
+const backend = [".NET (C#)", "Node.js", "SQL Server", "GraphQL", "Entity Framework", "MongoDB", "Express", "REST APIs", "PostgreSQL"]
+const devops = ["Azure DevOps", "Docker", "Kubernetes", "CI/CD Pipelines", "GitHub Actions", "Vercel", "Netlify", "Linux", "Nginx"]
 
 export default function Skills() {
   const renderList = (title: string, skills: string[]) => (

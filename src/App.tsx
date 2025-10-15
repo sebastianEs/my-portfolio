@@ -5,7 +5,7 @@ import About from "./pages/About"
 import Skills from "./pages/Skills"
 import Work from "./pages/Work"
 import Contact from "./pages/Contact"
-import "./styles/app.css"
+import "./styles/App.css"
 
 export default function App() {
   return (

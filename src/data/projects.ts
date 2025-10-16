@@ -1,5 +1,12 @@
 export const projects = [
     {
+      title: "Queenslab Internal Recruitment System",
+      year: "2025",
+      tech: [".NET (C#)", "Entity Framework", "SQL Server", "Azure DevOps"],
+      description:
+        "Developed a .NET-based API to support internal recruitment workflows. Designed data models and integrated authentication via Azure AD, gaining deep experience in backend architecture and API design.",
+    },
+    {
       title: "Osstell Cloud Platform",
       year: "Q3 2024 – Q4 2024",
       tech: ["TypeScript", "React", "Vite", "Material UI", "Azure DevOps", "Figma"],
@@ -19,13 +26,6 @@ export const projects = [
       tech: ["React", "Kubernetes", "Storybook", "Tailwind CSS", "Azure DevOps"],
       description:
         "Led frontend implementation for a new property management system. Built reusable components in Storybook and collaborated with backend engineers on an Azure-hosted deployment.",
-    },
-    {
-      title: "Queenslab Internal Recruitment System",
-      year: "2025",
-      tech: [".NET (C#)", "Entity Framework", "SQL Server", "Azure DevOps"],
-      description:
-        "Developed a .NET-based API to support internal recruitment workflows. Designed data models and integrated authentication via Azure AD, gaining deep experience in backend architecture and API design.",
     },
     {
       title: "Polarpumpen – Isberget System",

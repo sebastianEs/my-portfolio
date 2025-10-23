@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Summary from "./pages/Summary"
@@ -10,6 +11,7 @@ import "./styles/App.css"
 export default function App() {
   return (
     <>
+      <SpeedInsights />
       <Header />
       <main className="pt-20">
         <Summary />

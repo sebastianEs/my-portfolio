@@ -92,7 +92,7 @@ const KnowledgeMap = () => {
         {/* Header */}
         <div className="mb-12 text-center">
           <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-            Your Knowledge Map
+            My Knowledge Map
           </h1>
           <p className="text-slate-300 text-lg">7 years of expertise revealing surprising patterns</p>
         </div>
@@ -187,7 +187,7 @@ const KnowledgeMap = () => {
 
         {/* Hidden Superpower */}
         <div className="p-8 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-xl shadow-2xl">
-          <h2 className="text-3xl font-bold mb-4 text-slate-900">🚀 Your Hidden Superpower</h2>
+          <h2 className="text-3xl font-bold mb-4 text-slate-900">🚀 My Hidden Superpower</h2>
           <p className="text-lg text-slate-900 mb-4">
             <strong>The Complete Product Engineer:</strong> You're not just a frontend dev or backend dev - 
             you're someone who can take a product from concept to deployment. You understand UX, can build 

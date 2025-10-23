@@ -1,4 +1,5 @@
 import SectionTitle from "../components/SectionTitle"
+import KnowledgeMap from "../components/KnowledgeMap"
 
 export default function About() {
   return (
@@ -20,6 +21,11 @@ export default function About() {
         solid engineering — building solutions that are both technically strong and genuinely
         helpful for users.
       </p>
+
+      <hr className="my-16 border-gray-800" />
+
+      <SectionTitle title="Knowledge Map" />
+      <KnowledgeMap />
     </section>
   )
 }

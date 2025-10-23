@@ -3,8 +3,16 @@ import { Layers, Zap, Cloud, Database, Palette, Users } from 'lucide-react';
 
 const KnowledgeMap = () => {
   const [selectedCluster, setSelectedCluster] = useState<string | null>(null);
+  type ClusterKey = 'fullstack' | 'modernizer' | 'cloudOps' | 'dataArchitect' | 'uxThinking' | 'crossFunctional';
 
-  const clusters = {
+  const clusters: Record<ClusterKey, {
+    name: string;
+    icon: React.ElementType;
+    color: string;
+    skills: string[];
+    surprise: string;
+    connections: ClusterKey[];
+  }> = {
     fullstack: {
       name: "Full-Stack Bridge Builder",
       icon: Layers,
@@ -94,7 +102,7 @@ const KnowledgeMap = () => {
           {Object.entries(clusters).map(([key, cluster]) => {
             const Icon = cluster.icon;
             const isSelected = selectedCluster === key;
-            const isConnected = selectedCluster && clusters[selectedCluster].connections.includes(key);
+            const isConnected = selectedCluster && clusters[selectedCluster as ClusterKey].connections.includes(key as ClusterKey);
             
             return (
               <div
@@ -143,7 +151,7 @@ const KnowledgeMap = () => {
           <div className="mb-12 p-6 bg-cyan-500 bg-opacity-20 rounded-xl border border-cyan-400">
             <p className="text-center text-lg">
               <span className="font-bold text-cyan-300">Connected clusters highlighted</span> - 
-              See how {clusters[selectedCluster].name} links to other areas of your expertise
+              See how {clusters[selectedCluster as ClusterKey].name} links to other areas of your expertise
             </p>
           </div>
         )}
